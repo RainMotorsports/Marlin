@@ -1452,7 +1452,7 @@
 
   // Actual motor currents in Amps. The number of entries must match DIGIPOT_I2C_NUM_CHANNELS.
   // These correspond to the physical drivers, so be mindful if the order is changed.
- #define DIGIPOT_I2C_MOTOR_CURRENTS { 0.82, 0.82, 0.4, 0.82, 0.82 } //Mightyboard
+ #define DIGIPOT_I2C_MOTOR_CURRENTS { 0.81, 0.81, 0.28, 0.81, 0.81 } //Mightyboard
 
   //#define DIGIPOT_USE_RAW_VALUES    // Use DIGIPOT_MOTOR_CURRENT raw wiper values (instead of A4988 motor currents)
 
@@ -4059,7 +4059,7 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
-//#define STARTUP_COMMANDS "M17 Z"
+#define STARTUP_COMMANDS "M150 RUB255"
 
 /**
  * G-code Macros
