@@ -351,7 +351,7 @@ void _lcd_bed_tramming_homing() {
           GET_TEXT_F(MSG_BUTTON_NEXT), GET_TEXT_F(MSG_BUTTON_DONE)
         , _lcd_goto_next_corner
         , []{
-            line_to_z(BED_TRAMMING_Z_HOP); // Raise Z off the bed when done
+            //line_to_z(BED_TRAMMING_Z_HOP); // Raise Z off the bed when done
             TERN_(HAS_LEVELING, set_bed_leveling_enabled(menu_leveling_was_active));
             ui.goto_previous_screen_no_defer();
           }
